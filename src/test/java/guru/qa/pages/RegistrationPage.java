@@ -1,10 +1,10 @@
-package pages;
+package guru.qa.pages;
 
 import com.codeborne.selenide.SelenideElement;
 import pages.cpmponents.CalendarComponent;
 import pages.cpmponents.CheckResultComponent;
 
-import static com.codeborne.selenide.Condition.*;
+import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.*;
 

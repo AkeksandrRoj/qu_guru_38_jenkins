@@ -4,7 +4,7 @@ import com.codeborne.selenide.SelenideElement;
 import pages.cpmponents.CalendarComponent;
 import pages.cpmponents.CheckResultComponent;
 
-import static com.codeborne.selenide.Condition.*;
+import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.*;
 
@@ -68,9 +68,9 @@ public class RegistrationPage {
         return this;
     }
 
-    public RegistrationPage setDateOfBirth(String day,String month, String year) {
+    public RegistrationPage setDateOfBirth(String day, String month, String year) {
         calendarInput.click();
-        calendarComponent.setDate(day,month, year);
+        calendarComponent.setDate(day, month, year);
         return this;
     }
 
@@ -106,6 +106,7 @@ public class RegistrationPage {
         return this;
     }
 
+
     public void clickSubmit() {
         submitClick.click();
 
@@ -115,12 +116,5 @@ public class RegistrationPage {
         checkResultComponent.checkResult(key, value);
         return this;
     }
-
-
-    public void modalWindowNotShouldBeVisible() {
-        modalWindow.shouldNotBe(visible);
-
-    }
-
 
 }

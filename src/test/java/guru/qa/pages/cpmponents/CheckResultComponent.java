@@ -1,4 +1,4 @@
-package pages.cpmponents;
+package guru.qa.pages.cpmponents;
 
 
 
